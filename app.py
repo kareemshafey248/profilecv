@@ -71,4 +71,5 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Render the HTML
-components.html(full_html, height=3800, scrolling=True)
+# Significantly increased height for mobile view where content wraps
+components.html(full_html, height=5500, scrolling=False)

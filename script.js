@@ -27,7 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.preventDefault();
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
-                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                    // Slight delay to ensure any layouts finish shifting
+                    setTimeout(() => {
+                        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 50);
                 }
             }
         });
