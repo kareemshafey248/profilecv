@@ -71,5 +71,4 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Render the HTML
-# Note: Increasing height for better initial view
-components.html(full_html, height=2000, scrolling=True)
+components.html(full_html, height=4500, scrolling=True)
